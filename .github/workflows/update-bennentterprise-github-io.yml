@@ -1,8 +1,9 @@
 name: Update Index
 
 on:
-  repository_dispatch:
-    types: [update-index]
+  push:
+    branches:
+      - main
 
 jobs:
   update-index:
